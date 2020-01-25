@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% extends 'archimedesquestion/base.html' %}
+
+{% load staticfiles %}
+
+{% block jumbo_block %}
+{% if registered %}
+  <h1>Thank you for registering!</h1>
+{% else %}
+
+
+<form enctype="multipart/form-data" method="post">
+<div class="container">
+  <div class="container">
+    <div class="jumbotron reg">
+      <div class="reg_form">
+        <label for="username">User Name:</label>
+        <div class="">
+          {% csrf_token %}
+          {{ user_form.username }}
+        </div>
+        <label for="email">Email:</label>
+        <div class="">
+          {% csrf_token %}
+          {{ user_form.email }}
+        </div>
+        <label class="label_register" for="password">Password:</label>
+        <div class="">
+          {% csrf_token %}
+          {{ user_form.password }}
+        </div>
+        <label for="passwordconfirm">Confirm Password:</label>
+        <div class="">
+          {% csrf_token %}
+          {{ user_form.confirm_password }}
+        </div><br>
+
+        <input type="submit" class="btn btn-info" name="" value="Register">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+    <!-- {{ profile_form.as_p }} -->
+{% endif %}
+  </form>
+{% endblock %}

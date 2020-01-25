@@ -1,0 +1,85 @@
+
+.container_solucion {
+  display: inline-block;
+  width: 50%;
+}
+
+.navbar-custom {
+    background-color: #ffffff;
+    margin-right:200px;
+    margin-left:200px;
+
+}
+
+.form-group{
+  width: 300px;
+}
+.logo{
+  font-size: 50px;
+}
+.reg{
+  width: 600px;
+  margin-left: 200px;
+  margin-left: 200px;
+}
+
+.reg_form {
+  margin-left: 110px;
+  margin-left: 10px;
+}
+
+.btn-iniciar{
+  width: 500px;
+}
+
+.center{
+  display: inline-block;
+  text-align: center;
+
+}
+.ing_form{
+  margin-left: 110px;
+  margin-left: 100px;
+}
+.linea {
+  background-color: black;
+  height: 5px;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: black;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: black;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: black;
+}
+
+/* for dropdown only - change the color of droodown */
+.navbar-custom .dropdown-menu {
+    background-color: black;
+}
+.navbar-custom .dropdown-item {
+    color: black;
+}
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    color: #333333;
+    background-color: rgba(255,255,255,.5);
+}
+
+.label_register{
+  width: 100px;
+}

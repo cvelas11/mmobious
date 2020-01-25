@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% extends 'archimedesquestion/base.html' %}
+
+{% load staticfiles %}
+
+{% block jumbo_block %}
+<div class="">
+  <p></p>
+</div>
+
+<div class="container">
+  <div id="jumbo_questions" class="jumbotron">
+    <div class="">
+      <div id="enunciado_p" class="enunciado_principal" lang="latex" >
+      </div>
+      <br />
+      <div id="respuestas" class="">
+        <form class="" id="questions_form" method="post" name="formquestions">
+
+        <div id="answer1_container" name='respuestas'>
+            <input id="respuesta_1" type="radio" name="answer" value="answer1_container" >
+            <label for="respuesta_1" id="respuesta_1_label"></label><br />
+        </div>
+
+        <div id="answer2_container" name='respuestas'>
+          <input id="respuesta_2" type="radio" name="answer" value="answer2_container" >
+          <label for="respuesta_2" id="respuesta_2_label"></label><br />
+        </div>
+        <div id="answer3_container" name='respuestas'>
+          <input id="respuesta_3" type="radio" name="answer" value="answer3_container" >
+          <label for="respuesta_3" id="respuesta_3_label"></label><br />
+        </div>
+        <div id="answer4_container" name='respuestas'>
+          <input id="respuesta_4" type="radio" name="answer" value="answer4_container" >
+          <label for="respuesta_4" id="respuesta_4_label"></label><br />
+        </div>
+
+        </form>
+      <p></p>
+
+      <button id = 'verificar' type="button" class="btn btn-info"name="boton">Verificar</button>
+
+      <button id = 'siguiente' type="button" class="btn btn-outline-info waves-effect" name="boton">Siguiente</button>
+
+    </div>
+  </div>
+  <p></p><br>
+
+</div>
+<div class="container_solucion">
+  <iframe id="video_solucion" width="600" height="315" src="https://www.youtube.com/embed/lvg2ycZ2nWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+{% endblock %}

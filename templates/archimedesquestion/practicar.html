@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+{% extends 'archimedesquestion/base.html' %}
+
+{% load staticfiles %}
+
+
+{% block jumbo_block %}
+
+<div class="container">
+  <div id="jumbo_questions" class="jumbotron">
+    <div class="">
+
+      <p>A continuación encontrará una serie de preguntas en temas relacionados con matemáticas y solución de problemas diseñados con el fin de servir como preparación para las pruebas saber, exámenes de admisión a diferentes universidades y olimpiadas de matemáticas. Puedes usar la plataforma sin necesidad de ingresar con usuario y contraseña, sin embargo, en ese caso no podremos guardar los resultados en nuestro sistema por lo que te recomendamos hacerlo.</p>
+      <div class="center">
+        <form action="{% url 'archimedesquestion:questions' %}">
+          <input type="submit" class="btn btn-info btn-iniciar"name="boton" value="Iniciar Entrenamiento" />
+        </form>
+      </div>
+
+
+    </div>
+  </div>
+  <p></p><br>
+
+</div>
+
+{% endblock %}
