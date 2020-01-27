@@ -53,7 +53,7 @@ def ingresar(request):
         if user:
             if user.is_active:
                 login(request,user)
-                return HttpResponseRedirect(reverse('questions'))
+                return HttpResponseRedirect(reverse('practicar'))
             else:
                 return HttpResponse('Account not active')
         else:
