@@ -11,22 +11,12 @@
 
 }
 
-.form-group{
-  width: 300px;
-}
+
 .logo{
   font-size: 50px;
 }
-.reg{
-  width: 600px;
-  margin-left: 200px;
-  margin-left: 200px;
-}
 
-.reg_form {
-  margin-left: 110px;
-  margin-left: 10px;
-}
+
 
 .btn-iniciar{
   width: 500px;
@@ -35,12 +25,8 @@
 .center{
   display: inline-block;
   text-align: center;
+}
 
-}
-.ing_form{
-  margin-left: 110px;
-  margin-left: 100px;
-}
 .linea {
   background-color: black;
   height: 5px;
