@@ -40,6 +40,10 @@
     color: black;
 }
 
+#jumbo_questions {
+  margin-bottom: 1px;
+}
+
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
     color: black;
