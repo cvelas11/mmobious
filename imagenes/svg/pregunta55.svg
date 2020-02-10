@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="132.485pt" height="75.141pt" viewBox="0 0 132.485 75.141">
+<g enable-background="new">
+<clipPath id="cp0">
+<path transform="matrix(1,0,0,-1,-146.326,669.403)" d="M 0 0 L 612 0 L 612 792 L 0 792 Z "/>
+</clipPath>
+<g clip-path="url(#cp0)">
+<path transform="matrix(1,0,0,-1,2.4859925,73.17102)" stroke-width=".19925" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#929292" d="M 0 0 L 127.56062 0 M 0 14.17339 L 127.56062 14.17339 M 0 28.34679 L 127.56062 28.34679 M 0 42.52019 L 127.56062 42.52019 M 0 56.69359 L 127.56062 56.69359 M 0 70.86697 L 127.56062 70.86697 M 0 0 L 0 70.867 M 14.17339 0 L 14.17339 70.867 M 28.34679 0 L 28.34679 70.867 M 42.52019 0 L 42.52019 70.867 M 56.69359 0 L 56.69359 70.867 M 70.86697 0 L 70.86697 70.867 M 85.04037 0 L 85.04037 70.867 M 99.21378 0 L 99.21378 70.867 M 113.38718 0 L 113.38718 70.867 M 127.56056 0 L 127.56056 70.867 M 127.56062 70.867 "/>
+<path transform="matrix(1,0,0,-1,2.4859925,73.17102)" d="M 14.17339 28.3468 L 14.17339 56.69362 L 113.38724 56.69362 L 113.38724 28.3468 Z M 113.38724 56.69362 " fill="#ec008c"/>
+<path transform="matrix(1,0,0,-1,2.4859925,73.17102)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ec008c" d="M 14.17339 28.3468 L 14.17339 56.69362 L 113.38724 56.69362 L 113.38724 28.3468 Z M 113.38724 56.69362 "/>
+<path transform="matrix(1,0,0,-1,2.4859925,73.17102)" d="M 42.5202 28.3468 L 42.5202 42.5202 L 113.38724 42.5202 L 113.38724 28.3468 Z M 113.38724 42.5202 " fill="#f172ac"/>
+<path transform="matrix(1,0,0,-1,2.4859925,73.17102)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#f172ac" d="M 42.5202 28.3468 L 42.5202 42.5202 L 113.38724 42.5202 L 113.38724 28.3468 Z M 113.38724 42.5202 "/>
+<path transform="matrix(1,0,0,-1,2.4859925,73.17102)" d="M 42.5202 14.17339 L 42.5202 56.69362 L 85.04042 56.69362 L 85.04042 14.17339 Z M 85.04042 56.69362 " fill="#f172ac"/>
+<path transform="matrix(1,0,0,-1,2.4859925,73.17102)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#f172ac" d="M 42.5202 14.17339 L 42.5202 56.69362 L 85.04042 56.69362 L 85.04042 14.17339 Z M 85.04042 56.69362 "/>
+<path transform="matrix(1,0,0,-1,2.4859925,73.17102)" d="M 14.17339 14.17339 L 14.17339 28.3468 L 42.5202 28.3468 L 42.5202 14.17339 Z M 42.5202 28.3468 " fill="#f172ac"/>
+<path transform="matrix(1,0,0,-1,2.4859925,73.17102)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#f172ac" d="M 14.17339 14.17339 L 14.17339 28.3468 L 42.5202 28.3468 L 42.5202 14.17339 Z M 42.5202 28.3468 "/>
+<path transform="matrix(1,0,0,-1,2.4859925,73.17102)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 14.17339 28.3468 L 14.17339 56.69362 L 113.38724 56.69362 L 113.38724 28.3468 Z M 113.38724 56.69362 "/>
+<path transform="matrix(1,0,0,-1,2.4859925,73.17102)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 42.5202 28.3468 L 42.5202 42.5202 L 113.38724 42.5202 L 113.38724 28.3468 Z M 113.38724 42.5202 "/>
+<path transform="matrix(1,0,0,-1,2.4859925,73.17102)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 42.5202 14.17339 L 42.5202 56.69362 L 85.04042 56.69362 L 85.04042 14.17339 Z M 85.04042 56.69362 "/>
+<path transform="matrix(1,0,0,-1,2.4859925,73.17102)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 14.17339 14.17339 L 14.17339 28.3468 L 42.5202 28.3468 L 42.5202 14.17339 Z M 42.5202 28.3468 "/>
+</g>
+</g>
+</svg>

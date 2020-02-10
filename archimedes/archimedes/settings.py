@@ -25,7 +25,7 @@ SECRET_KEY = '1+a7kfkaxnn71r0um66nb2am-w0a-^30_l2(3p_mu#tg8q4glg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cvelas11.pythonanywhere.com']
+ALLOWED_HOSTS = ['cvelas11.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -118,7 +118,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/statics/'
 
 STATICFILES_DIRS = [
     STATIC_DIR,
