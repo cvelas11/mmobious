@@ -20,8 +20,8 @@ var preguntas = {
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"A"
 	},
-3: {enunciado_p:"Cuál es el valor de la expresión \\(2*(4*5) \\), si para dos números reales \\(a,b \\) se cumple que \\(a*b= \\frac{ab}{a-b} \\).",
-      respuesta_correcta:1,
+3: {enunciado_p:"Cuál es el valor de la expresión \\(2*(5*4) \\), si para dos números reales \\(a,b \\) se cumple que \\(a*b= \\frac{ab}{a-b} \\).",
+      respuesta_correcta:3,
       posibles_respuestas:["\\( \\frac{1}{7} \\)","\\( 40 \\)","\\(\\frac{-20}{9} \\)","\\(\\frac{20}{9} \\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"A"
@@ -38,15 +38,15 @@ var preguntas = {
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"A"
 	},
-6: {enunciado_p:"Si \\(x-y=2\\) y \\(x^2-y^2=8\\). ¿ A cuanto equivale \\(2x+6y\\)?",
+6: {enunciado_p:"Si \\(x-y=2\\) y \\(x^2-y^2=8\\). ¿ A cuanto equivale \\(2x+y\\)?",
       respuesta_correcta:2,
       posibles_respuestas:["5","7","2","10"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"A"
 	},
-7: {enunciado_p:"La hidra de Lerna era un monstruo de la mitología griega con la capacidad de recuperar dos cabezas por cada cabeza que le cortaran, un inexperto héroe intenta matarla, el primer día cortó la única cabeza que tenía pero los siguientes solo pudo cortar la mitad de las que había. ¿Cuántas cabezas tiene la hidra al final del octavo día?",
+7: {enunciado_p:"Un cultivo de bacterias triplica su población cada 3 horas, si inicialmente hay 250, ¿Cuántas bacterias habrá al cabo de 19 horas?",
       respuesta_correcta:4,
-      posibles_respuestas:["254","32","128","64"],
+      posibles_respuestas:["\\(250 \\sqrt{3^3} \\cdot 3^6\\)","\\(\\sqrt{3}\\cdot  3^6\\)","\\(250 \\sqrt{3}\\cdot  3^5\\)","\\(250 \\sqrt{3}\\cdot  3^6\\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"A"
 	},
@@ -113,9 +113,10 @@ var preguntas = {
 	},
 16: {enunciado_p:"La tabla muestra los resultados de una encuesta aplicada a 200 personas respecto a lo que consideran el problema más importante del país. De las afirmaciones, la única falsa es:",
       respuesta_correcta:2,
-      posibles_respuestas:["El 40% de la población considera el desempleo como el mayor problema", "El 35% de la poblacion considera la corrupción como el mayor problema","El porcentaje relativo a hombres, que opinan que el desempleo es el mayor problema, es igual al procentaje relativo a mujeres que creen que es conflicto armado" ,"El 35% de la población considera el conflicto armado como el mayor problema"],
+      posibles_respuestas:["El 40% de la población considera el desempleo como el mayor problema", "El 35% de la poblacion considera la corrupción como el mayor problema","El porcentaje de hombres que opinan que el desempleo es el mayor problema, es igual al procentaje de mujeres que creen que es conflicto armado." ,"El 35% de la población considera el conflicto armado como el mayor problema."],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"AG"
+      ,grafica:"../statics/images/pregunta16.svg"
 	},
 17: {enunciado_p:"Dos materiales, representados como un círculo y un cuadrado, presentan las características mostradas a continuación. De ésto se puede concluir que:",
       respuesta_correcta:3,
@@ -161,14 +162,15 @@ var preguntas = {
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"C"
 	},
-22: {enunciado_p:"La gráfica de la función \\( f(x)=1-2\\sqrt{3- \\frac{x}{4}} \\) es:",
+22: {enunciado_p:"De las opciones que se presentan a continuación, gráfica de la función \\( f(x)=1-2\\sqrt{3- \\frac{x}{4}} \\) es:",
       respuesta_correcta:2,
-      posibles_respuestas:["0",
-			   "Incluir gráficas",
-			   "Incluir gráficas",
-			   "Incluir gráficas"],
+      posibles_respuestas:["I",
+			   "II",
+			   "III",
+			   "IV"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"C"
+      ,grafica:"../statics/images/pregunta22.svg"
     },
 23: {enunciado_p:"El crecimiento de una población de aves está dado por la función \\( P(t)=be^{-\\alpha t}+c \\), donde \\( \\alpha \\), \\(b\\) y \\(c\\) son constantes positivas diferentes. Si se deja pasar un tiempo muy grande se espera con seguridad que:",
       respuesta_correcta:3,
@@ -193,7 +195,7 @@ var preguntas = {
 	},
 26: {enunciado_p:"La gráfica de \\(f(x)\\) y \\(g(x)\\) se muestra a continuación, ¿Cuál de las opciones es una posible gráfica de \\(f+g\\)?",
       respuesta_correcta:3,
-      posibles_respuestas:["faltan graficas","\\((-\\infty,\\infty)\\)","\\( \\mathbb{R} \\smallsetminus \\lbrace -1 \\rbrace \\)","\\(-1\\)"],
+      posibles_respuestas:["A","B","C","D"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"C"
 	},
@@ -498,7 +500,7 @@ var preguntas = {
       posibles_respuestas:["Es más probable el evento I que el evento II.",
 			   "Es más probable el evento II que el evento I.",
 			   "Ambos eventos son igualmente probables.",
-			   "Las "],
+			   "Ambas son dependientes y por tanto, uno implica al otro."],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"P"
     },
@@ -546,6 +548,7 @@ var preguntas = {
 			   "\\(\\frac{2}{5}\\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"P"
+      ,grafica:"../statics/images/pregunta65.svg"
     },
 66: {enunciado_p:"Para armar un PC se disponen cuatro modelos diferentes de tarjeta gráfica, tres tipos de procesador y 4 capacidades de memoria RAM. Si para un diseño particular no se usa uno de los modelos de memoria RAM, ¿Cuántos diseños de PC están disponibles?",
       respuesta_correcta:2,
@@ -573,6 +576,7 @@ var preguntas = {
 			   "\\(12 \\sqrt{2} \\)m"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"T"
+      ,grafica:"../statics/images/pregunta68.svg"
     },
 69: {enunciado_p:"En la figura el valor de x+y es:",
       respuesta_correcta:2,
@@ -582,6 +586,7 @@ var preguntas = {
 			   "101°"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"T"
+      ,grafica:"../statics/images/pregunta69.svg"
     },
 70: {enunciado_p:"Los cuadrados ABCD y EFGH tiene lados de igual longitud, la medida del ángulo ADE es:",
       respuesta_correcta:4,
@@ -591,8 +596,9 @@ var preguntas = {
 			   "160°"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"T"
+      ,grafica:"../statics/images/pregunta70.svg"
     },
-71: {enunciado_p:"Si el \\( \\cos \\theta = -\frac{2}{3} \\) y \\( \\sin \\theta < 0 \\), entonces \\( \\csc \\theta = \\)",
+71: {enunciado_p:"Si el \\( \\cos \\theta = -\\frac{2}{3} \\) y \\( \\sin \\theta < 0 \\), entonces \\( \\csc \\theta = \\)",
       respuesta_correcta:4,
       posibles_respuestas:["\\( \\frac{-3}{2} \\)",
 			   "\\( \\frac{3 \\sqrt{5}}{5} \\)",
@@ -619,7 +625,7 @@ var preguntas = {
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"T"
     },
-74: {enunciado_p:"Sobre los lados de un triángulo rectángulo se dibujan semicírculos, de la figura \\(A+B=\\)",
+74: {enunciado_p:"Sobre los lados de un triángulo rectángulo se dibujan semicírculos, de la figura, las suma de las áreas A y B es:",
       respuesta_correcta:3,
       posibles_respuestas:["\\(2C\\)",
 			   "\\(C^2\\)",
@@ -627,6 +633,7 @@ var preguntas = {
 			   "\\(\\frac{C}{2}\\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"T"
+      ,grafica:"../statics/images/pregunta74.svg"
     },
 75: {enunciado_p:"Al unir las aristas \\(E,F,G\\) del siguiente cubo se forma un triángulo, ¿Cuál es la medida del ángulo \\(EFG\\)? Recuerde que si \\( \\cos(\\alpha)=b\\) entonces \\( arccos(b)=\\alpha\\).",
       respuesta_correcta:2,
@@ -636,6 +643,7 @@ var preguntas = {
 			   "\\(arccos(\\frac{\\sqrt{4}}{\\sqrt{6}})\\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"T"
+      ,grafica:"../statics/images/pregunta75.svg"
     },
 }
 
