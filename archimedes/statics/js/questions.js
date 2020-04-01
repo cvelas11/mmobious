@@ -6,6 +6,8 @@ var div_respuestas = document.getElementsByName("respuestas");
 var botones = document.getElementsByName("boton");
 
 var sig_boton = document.getElementById('siguiente')
+var ver_boton = document.getElementById('verificar')
+
 sig_boton.disabled = true;
 var preguntas = {
 1: {enunciado_p:"La base para un mural de \\(14  m^2 \\) se pinta con dos colores, la parte en azul excede en \\(2  m^2 \\) al triple de la parte en blanco. La razón entre el área blanca y el área total es:",
@@ -22,7 +24,7 @@ var preguntas = {
 	},
 3: {enunciado_p:"Cuál es el valor de la expresión \\(2*(5*4) \\), si para dos números reales \\(a,b \\) se cumple que \\(a*b= \\frac{ab}{a-b} \\).",
       respuesta_correcta:3,
-      posibles_respuestas:["\\( \\frac{1}{7} \\)","\\( 40 \\)","\\(\\frac{-20}{9} \\)","\\(\\frac{20}{9} \\)"],
+      posibles_respuestas:["\\( \\frac{1}{7} \\)","\\(40\\)","\\(\\frac{-20}{9} \\)","\\(\\frac{20}{9} \\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"A"
 	},
@@ -46,7 +48,7 @@ var preguntas = {
 	},
 7: {enunciado_p:"Un cultivo de bacterias triplica su población cada 3 horas, si inicialmente hay 250, ¿Cuántas bacterias habrá al cabo de 19 horas?",
       respuesta_correcta:4,
-      posibles_respuestas:["\\(250 \\sqrt{3^3} \\cdot 3^6\\)","\\(\\sqrt{3}\\cdot  3^6\\)","\\(250 \\sqrt{3}\\cdot  3^5\\)","\\(250 \\sqrt{3}\\cdot  3^6\\)"],
+      posibles_respuestas:["\\(250 \\sqrt[3]{3^3} \\cdot 3^6\\)","\\(\\sqrt[3]{3}\\cdot  3^6\\)","\\(250 \\sqrt[3]{3}\\cdot  3^5\\)","\\(250 \\sqrt[3]{3}\\cdot  3^6\\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"A"
 	},
@@ -189,7 +191,8 @@ var preguntas = {
 	},
 25: {enunciado_p:"Si sobre el intervalo  [0,2]  una función cumple que el área entre esta y el eje \\(x\\) es igual a \\(1\\) la función puede llamarse una función de probabilidad. De las siguientes funciones, la que no satisface la definición anterior es:",
       respuesta_correcta:4,
-      posibles_respuestas:["\\( f(x)=\\frac{1}{2}\\)","\\(f(x)=-\\frac{x}{2}+1\\)","\\( f(x)=\\begin{cases}\\frac{2}{3}x & 0 \\leq x \\leq 1 \\\\frac{2}{3} & x \\geq 1 \end{cases} \\)","\\( f(x)=\\sqrt{2x}\\)"],
+      //posibles_respuestas:["\\( f(x)=\\frac{1}{2}\\)","\\(f(x)=-\\frac{x}{2}+1\\)","\\( f(x)=\\begin{cases}\\frac{2}{3}x & 0 \\leq x \\leq 1 \\frac{2}{3} & x \\geq 1 \end{cases} \\)","\\( f(x)=\\sqrt{2x}\\)"],
+      posibles_respuestas:["\\(f(x)=\\frac{1}{2}\\)", "\\(f(x)=-\\frac{x}{2}+1\\)","\\(f(x)= \\begin{cases} \\displaystyle \\frac{2}{3}x & 0 \\leq x \\leq 1 \\\\  \\displaystyle \\frac{2}{3} & x \\geq 1 \\end{cases}\\)","\\(f(x)=\\sqrt{2x}\\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"C"
 	},
@@ -693,10 +696,15 @@ function clearbuttons(event){
 
 numpregunta = document.getElementById("numeropregunta")
 numpregunta.innerHTML = contador
-imagenpregunta = document.getElementById("imagenpregunta")
+imagenpregunta = document.getElementById("preguntaimagen")
 
+imagenpregunta.innerHTML = ""
 try{
-  imagenpregunta.src =  preguntas[contador.toString()]["grafica"];
+  imagen =  preguntas[contador.toString()]["grafica"];
+  if(imagen != undefined){
+    console.log(imagen);
+    imagenpregunta.innerHTML = "<img  src='" + imagen +  "' width='350' height='200'>"
+  }
 }catch(error){
 }
 
@@ -714,21 +722,23 @@ $("#siguiente").click(function(event){
 
     if(contador <= numero_preguntas){
       enunciado.innerHTML = preguntas[contador.toString()]['enunciado_p']
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub,"enunciado_p"]);
       numpregunta.innerHTML = contador
       respuesta_1.innerHTML = preguntas[contador.toString()]['posibles_respuestas'][0];
       respuesta_2.innerHTML = preguntas[contador.toString()]['posibles_respuestas'][1];
       respuesta_3.innerHTML = preguntas[contador.toString()]['posibles_respuestas'][2];
+      //MathJax.Hub.Queue(["Typeset",MathJax.Hub,"respuesta_3_label"]);
       respuesta_4.innerHTML = preguntas[contador.toString()]['posibles_respuestas'][3];
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub,"respuesta_1_label"]);
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub,"respuesta_2_label"]);
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub,"respuesta_3_label"]);
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub,"respuesta_4_label"]);
-
+      //MathJax.Hub.Queue(["Typeset",MathJax.Hub,"respuesta_4_label"]);
+      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
       video.src  = preguntas[contador.toString()]['video'];
       video.disabled = true;
+      imagenpregunta.innerHTML = ""
       try{
-        imagenpregunta.src =  preguntas[contador.toString()]["grafica"];
+        imagen =  preguntas[contador.toString()]["grafica"];
+        if(imagen != undefined){
+          console.log(imagen);
+          imagenpregunta.innerHTML = "<img  src='" + imagen +  "' width='350' height='200'>"
+        }
       }catch(error){
       }
 
@@ -746,19 +756,23 @@ $("#siguiente").click(function(event){
       for (var i=0, iLen=botones.length; i<iLen; i++) {
         botones[i].style.display = "none";
       }
+      imagenpregunta.src = None;
     }
     sig_boton.disabled = true;
+    ver_boton.disabled = false;
+
 
 });
 
 $("#verificar").click(function(event){
   var button_checked = document.getElementById($('input[name=answer]:checked', '#questions_form').val());
   //console.log(button_checked);
-  video.style.display = "inline-block";
 
   if (button_checked === null){
     alert('Por favor seleccione una respuesta')
   }else{
+    video.style.display = "inline-block";
+
     clearcolors()
     //var container_green = document.getElementById("answer"+ preguntas[contador.toString()]['respuesta_correcta'].toString() + "_container")
     //container_green.style.backgroundColor = '#00b700';
@@ -776,5 +790,7 @@ $("#verificar").click(function(event){
       radios[i].disabled = true;
     }
     sig_boton.disabled = false;
+    ver_boton.disabled = true;
+
   }
 });
