@@ -6,6 +6,8 @@ var div_respuestas = document.getElementsByName("respuestas");
 var botones = document.getElementsByName("boton");
 
 var sig_boton = document.getElementById('siguiente')
+var ver_boton = document.getElementById('verificar')
+
 sig_boton.disabled = true;
 var preguntas = {
 1: {enunciado_p:"La base para un mural de \\(14  m^2 \\) se pinta con dos colores, la parte en azul excede en \\(2  m^2 \\) al triple de la parte en blanco. La razón entre el área blanca y el área total es:",
@@ -20,9 +22,9 @@ var preguntas = {
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"A"
 	},
-3: {enunciado_p:"Cuál es el valor de la expresión \\(2*(4*5) \\), si para dos números reales \\(a,b \\) se cumple que \\(a*b= \\frac{ab}{a-b} \\).",
-      respuesta_correcta:1,
-      posibles_respuestas:["\\( \\frac{1}{7} \\)","\\( 40 \\)","\\(\\frac{-20}{9} \\)","\\(\\frac{20}{9} \\)"],
+3: {enunciado_p:"Cuál es el valor de la expresión \\(2*(5*4) \\), si para dos números reales \\(a,b \\) se cumple que \\(a*b= \\frac{ab}{a-b} \\).",
+      respuesta_correcta:3,
+      posibles_respuestas:["\\( \\frac{1}{7} \\)","\\(40\\)","\\(\\frac{-20}{9} \\)","\\(\\frac{20}{9} \\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"A"
 	},
@@ -38,15 +40,15 @@ var preguntas = {
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"A"
 	},
-6: {enunciado_p:"Si \\(x-y=2\\) y \\(x^2-y^2=8\\). ¿ A cuanto equivale \\(2x+6y\\)?",
+6: {enunciado_p:"Si \\(x-y=2\\) y \\(x^2-y^2=8\\). ¿ A cuanto equivale \\(2x+y\\)?",
       respuesta_correcta:2,
       posibles_respuestas:["5","7","2","10"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"A"
 	},
-7: {enunciado_p:"La hidra de Lerna era un monstruo de la mitología griega con la capacidad de recuperar dos cabezas por cada cabeza que le cortaran, un inexperto héroe intenta matarla, el primer día cortó la única cabeza que tenía pero los siguientes solo pudo cortar la mitad de las que había. ¿Cuántas cabezas tiene la hidra al final del octavo día?",
+7: {enunciado_p:"Un cultivo de bacterias triplica su población cada 3 horas, si inicialmente hay 250, ¿Cuántas bacterias habrá al cabo de 19 horas?",
       respuesta_correcta:4,
-      posibles_respuestas:["254","32","128","64"],
+      posibles_respuestas:["\\(250 \\sqrt[3]{3^3} \\cdot 3^6\\)","\\(\\sqrt[3]{3}\\cdot  3^6\\)","\\(250 \\sqrt[3]{3}\\cdot  3^5\\)","\\(250 \\sqrt[3]{3}\\cdot  3^6\\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"A"
 	},
@@ -113,9 +115,10 @@ var preguntas = {
 	},
 16: {enunciado_p:"La tabla muestra los resultados de una encuesta aplicada a 200 personas respecto a lo que consideran el problema más importante del país. De las afirmaciones, la única falsa es:",
       respuesta_correcta:2,
-      posibles_respuestas:["El 40% de la población considera el desempleo como el mayor problema", "El 35% de la poblacion considera la corrupción como el mayor problema","El porcentaje relativo a hombres, que opinan que el desempleo es el mayor problema, es igual al procentaje relativo a mujeres que creen que es conflicto armado" ,"El 35% de la población considera el conflicto armado como el mayor problema"],
+      posibles_respuestas:["El 40% de la población considera el desempleo como el mayor problema", "El 35% de la poblacion considera la corrupción como el mayor problema","El porcentaje de hombres que opinan que el desempleo es el mayor problema, es igual al procentaje de mujeres que creen que es conflicto armado." ,"El 35% de la población considera el conflicto armado como el mayor problema."],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"AG"
+      ,grafica:"../statics/images/pregunta16.svg"
 	},
 17: {enunciado_p:"Dos materiales, representados como un círculo y un cuadrado, presentan las características mostradas a continuación. De ésto se puede concluir que:",
       respuesta_correcta:3,
@@ -161,14 +164,15 @@ var preguntas = {
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"C"
 	},
-22: {enunciado_p:"La gráfica de la función \\( f(x)=1-2\\sqrt{3- \\frac{x}{4}} \\) es:",
+22: {enunciado_p:"De las opciones que se presentan a continuación, gráfica de la función \\( f(x)=1-2\\sqrt{3- \\frac{x}{4}} \\) es:",
       respuesta_correcta:2,
-      posibles_respuestas:["0",
-			   "Incluir gráficas",
-			   "Incluir gráficas",
-			   "Incluir gráficas"],
+      posibles_respuestas:["I",
+			   "II",
+			   "III",
+			   "IV"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"C"
+      ,grafica:"../statics/images/pregunta22.svg"
     },
 23: {enunciado_p:"El crecimiento de una población de aves está dado por la función \\( P(t)=be^{-\\alpha t}+c \\), donde \\( \\alpha \\), \\(b\\) y \\(c\\) son constantes positivas diferentes. Si se deja pasar un tiempo muy grande se espera con seguridad que:",
       respuesta_correcta:3,
@@ -187,13 +191,14 @@ var preguntas = {
 	},
 25: {enunciado_p:"Si sobre el intervalo  [0,2]  una función cumple que el área entre esta y el eje \\(x\\) es igual a \\(1\\) la función puede llamarse una función de probabilidad. De las siguientes funciones, la que no satisface la definición anterior es:",
       respuesta_correcta:4,
-      posibles_respuestas:["\\( f(x)=\\frac{1}{2}\\)","\\(f(x)=-\\frac{x}{2}+1\\)","\\( f(x)=\\begin{cases}\\frac{2}{3}x & 0 \\leq x \\leq 1 \\\\frac{2}{3} & x \\geq 1 \end{cases} \\)","\\( f(x)=\\sqrt{2x}\\)"],
+      //posibles_respuestas:["\\( f(x)=\\frac{1}{2}\\)","\\(f(x)=-\\frac{x}{2}+1\\)","\\( f(x)=\\begin{cases}\\frac{2}{3}x & 0 \\leq x \\leq 1 \\frac{2}{3} & x \\geq 1 \end{cases} \\)","\\( f(x)=\\sqrt{2x}\\)"],
+      posibles_respuestas:["\\(f(x)=\\frac{1}{2}\\)", "\\(f(x)=-\\frac{x}{2}+1\\)","\\(f(x)= \\begin{cases} \\displaystyle \\frac{2}{3}x & 0 \\leq x \\leq 1 \\\\  \\displaystyle \\frac{2}{3} & x \\geq 1 \\end{cases}\\)","\\(f(x)=\\sqrt{2x}\\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"C"
 	},
 26: {enunciado_p:"La gráfica de \\(f(x)\\) y \\(g(x)\\) se muestra a continuación, ¿Cuál de las opciones es una posible gráfica de \\(f+g\\)?",
       respuesta_correcta:3,
-      posibles_respuestas:["faltan graficas","\\((-\\infty,\\infty)\\)","\\( \\mathbb{R} \\smallsetminus \\lbrace -1 \\rbrace \\)","\\(-1\\)"],
+      posibles_respuestas:["A","B","C","D"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"C"
 	},
@@ -498,7 +503,7 @@ var preguntas = {
       posibles_respuestas:["Es más probable el evento I que el evento II.",
 			   "Es más probable el evento II que el evento I.",
 			   "Ambos eventos son igualmente probables.",
-			   "Las "],
+			   "Ambas son dependientes y por tanto, uno implica al otro."],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"P"
     },
@@ -546,6 +551,7 @@ var preguntas = {
 			   "\\(\\frac{2}{5}\\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"P"
+      ,grafica:"../statics/images/pregunta65.svg"
     },
 66: {enunciado_p:"Para armar un PC se disponen cuatro modelos diferentes de tarjeta gráfica, tres tipos de procesador y 4 capacidades de memoria RAM. Si para un diseño particular no se usa uno de los modelos de memoria RAM, ¿Cuántos diseños de PC están disponibles?",
       respuesta_correcta:2,
@@ -573,6 +579,7 @@ var preguntas = {
 			   "\\(12 \\sqrt{2} \\)m"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"T"
+      ,grafica:"../statics/images/pregunta68.svg"
     },
 69: {enunciado_p:"En la figura el valor de x+y es:",
       respuesta_correcta:2,
@@ -582,6 +589,7 @@ var preguntas = {
 			   "101°"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"T"
+      ,grafica:"../statics/images/pregunta69.svg"
     },
 70: {enunciado_p:"Los cuadrados ABCD y EFGH tiene lados de igual longitud, la medida del ángulo ADE es:",
       respuesta_correcta:4,
@@ -591,8 +599,9 @@ var preguntas = {
 			   "160°"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"T"
+      ,grafica:"../statics/images/pregunta70.svg"
     },
-71: {enunciado_p:"Si el \\( \\cos \\theta = -\frac{2}{3} \\) y \\( \\sin \\theta < 0 \\), entonces \\( \\csc \\theta = \\)",
+71: {enunciado_p:"Si el \\( \\cos \\theta = -\\frac{2}{3} \\) y \\( \\sin \\theta < 0 \\), entonces \\( \\csc \\theta = \\)",
       respuesta_correcta:4,
       posibles_respuestas:["\\( \\frac{-3}{2} \\)",
 			   "\\( \\frac{3 \\sqrt{5}}{5} \\)",
@@ -619,7 +628,7 @@ var preguntas = {
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"T"
     },
-74: {enunciado_p:"Sobre los lados de un triángulo rectángulo se dibujan semicírculos, de la figura \\(A+B=\\)",
+74: {enunciado_p:"Sobre los lados de un triángulo rectángulo se dibujan semicírculos, de la figura, las suma de las áreas A y B es:",
       respuesta_correcta:3,
       posibles_respuestas:["\\(2C\\)",
 			   "\\(C^2\\)",
@@ -627,6 +636,7 @@ var preguntas = {
 			   "\\(\\frac{C}{2}\\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"T"
+      ,grafica:"../statics/images/pregunta74.svg"
     },
 75: {enunciado_p:"Al unir las aristas \\(E,F,G\\) del siguiente cubo se forma un triángulo, ¿Cuál es la medida del ángulo \\(EFG\\)? Recuerde que si \\( \\cos(\\alpha)=b\\) entonces \\( arccos(b)=\\alpha\\).",
       respuesta_correcta:2,
@@ -636,6 +646,7 @@ var preguntas = {
 			   "\\(arccos(\\frac{\\sqrt{4}}{\\sqrt{6}})\\)"],
       video:"https://www.youtube.com/embed/pZ71EJ7XigU",
       categoría:"T"
+      ,grafica:"../statics/images/pregunta75.svg"
     },
 }
 
@@ -685,10 +696,15 @@ function clearbuttons(event){
 
 numpregunta = document.getElementById("numeropregunta")
 numpregunta.innerHTML = contador
-imagenpregunta = document.getElementById("imagenpregunta")
+imagenpregunta = document.getElementById("preguntaimagen")
 
+imagenpregunta.innerHTML = ""
 try{
-  imagenpregunta.src =  preguntas[contador.toString()]["grafica"];
+  imagen =  preguntas[contador.toString()]["grafica"];
+  if(imagen != undefined){
+    console.log(imagen);
+    imagenpregunta.innerHTML = "<img  src='" + imagen +  "' width='350' height='200'>"
+  }
 }catch(error){
 }
 
@@ -706,21 +722,23 @@ $("#siguiente").click(function(event){
 
     if(contador <= numero_preguntas){
       enunciado.innerHTML = preguntas[contador.toString()]['enunciado_p']
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub,"enunciado_p"]);
       numpregunta.innerHTML = contador
       respuesta_1.innerHTML = preguntas[contador.toString()]['posibles_respuestas'][0];
       respuesta_2.innerHTML = preguntas[contador.toString()]['posibles_respuestas'][1];
       respuesta_3.innerHTML = preguntas[contador.toString()]['posibles_respuestas'][2];
+      //MathJax.Hub.Queue(["Typeset",MathJax.Hub,"respuesta_3_label"]);
       respuesta_4.innerHTML = preguntas[contador.toString()]['posibles_respuestas'][3];
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub,"respuesta_1_label"]);
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub,"respuesta_2_label"]);
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub,"respuesta_3_label"]);
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub,"respuesta_4_label"]);
-
+      //MathJax.Hub.Queue(["Typeset",MathJax.Hub,"respuesta_4_label"]);
+      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
       video.src  = preguntas[contador.toString()]['video'];
       video.disabled = true;
+      imagenpregunta.innerHTML = ""
       try{
-        imagenpregunta.src =  preguntas[contador.toString()]["grafica"];
+        imagen =  preguntas[contador.toString()]["grafica"];
+        if(imagen != undefined){
+          console.log(imagen);
+          imagenpregunta.innerHTML = "<img  src='" + imagen +  "' width='350' height='200'>"
+        }
       }catch(error){
       }
 
@@ -738,19 +756,23 @@ $("#siguiente").click(function(event){
       for (var i=0, iLen=botones.length; i<iLen; i++) {
         botones[i].style.display = "none";
       }
+      imagenpregunta.src = None;
     }
     sig_boton.disabled = true;
+    ver_boton.disabled = false;
+
 
 });
 
 $("#verificar").click(function(event){
   var button_checked = document.getElementById($('input[name=answer]:checked', '#questions_form').val());
   //console.log(button_checked);
-  video.style.display = "inline-block";
 
   if (button_checked === null){
     alert('Por favor seleccione una respuesta')
   }else{
+    video.style.display = "inline-block";
+
     clearcolors()
     //var container_green = document.getElementById("answer"+ preguntas[contador.toString()]['respuesta_correcta'].toString() + "_container")
     //container_green.style.backgroundColor = '#00b700';
@@ -768,5 +790,7 @@ $("#verificar").click(function(event){
       radios[i].disabled = true;
     }
     sig_boton.disabled = false;
+    ver_boton.disabled = true;
+
   }
 });

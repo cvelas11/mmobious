@@ -25,7 +25,7 @@ SECRET_KEY = '1+a7kfkaxnn71r0um66nb2am-w0a-^30_l2(3p_mu#tg8q4glg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cvelas11.pythonanywhere.com','127.0.0.1']
+ALLOWED_HOSTS = ['cvelas11.pythonanywhere.com','127.0.0.1','b36ed847.ngrok.io','d11ecbcb.ngrok.io']
 
 
 # Application definition
