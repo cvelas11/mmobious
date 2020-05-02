@@ -131,6 +131,8 @@ function pregunta(preguntas){
       for (var i=0, iLen=botones.length; i<iLen; i++) {
         botones[i].style.display = "none";
       }
+      document.getElementById("volver").style.display = "inline"
+
       imagenpregunta.style.display = "none";
       numpregunta.innerHTML = ""
     }
