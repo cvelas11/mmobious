@@ -21,8 +21,10 @@ from archimedesquestion import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     url('admin/', admin.site.urls),
+    url("^iniciar/", views.iniciar, name = 'iniciar'),
+    url("^set_question/", views.set_question, name = 'set_question'),
+    url("^arquimedesquestion/", include('archimedesquestion.urls'), name = 'questions'),
     url("^$", views.practicar, name = 'practicar'),
-    url("^arquimedesquestion/", include('archimedesquestion.urls'), name = 'questions')
 ]
 
 urlpatterns += staticfiles_urlpatterns()
