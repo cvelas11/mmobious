@@ -14,13 +14,6 @@
 			"categoría": "A"
 		},
 		{
-			"enunciado_p": "Cuál es el valor de la expresión \\(2*(5*4) \\), si para dos números reales \\(a,b \\) se cumple que \\(a*b= \\frac{ab}{a-b} \\).",
-			"respuesta_correcta": 3,
-			"posibles_respuestas": ["\\( \\frac{1}{7} \\)", "\\(40\\)", "\\(\\frac{-20}{9} \\)", "\\(\\frac{20}{9} \\)"],
-			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
-			"categoría": "A"
-		},
-		{
 			"enunciado_p": "El número de tres dígitos \\(2a3 \\) al ser sumado con el número 326 da como resultado el número \\(5b9\\), si \\(5b9\\) es divisible entre \\(9\\). ¿Cuál es el valor de \\(a+b\\)?",
 			"respuesta_correcta": 3,
 			"posibles_respuestas": ["5", "4", "6", "7"],
@@ -107,17 +100,6 @@
 			"categoría": "E"
 		},
 		{
-			"enunciado_p": "Si se quiere duplicar un capital en dos años y medio, ¿A qué tasa trimestral simple se debe invertir?",
-			"respuesta_correcta": 4,
-			"posibles_respuestas": ["3%",
-				"5%",
-				"6%",
-				"10%"
-			],
-			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
-			"categoría": "E"
-		},
-		{
 			"enunciado_p": "En una familia hay 4 hijos, ¿Cuál es la probabilidad de que al menos dos sean mujeres?",
 			"respuesta_correcta": 1,
 			"posibles_respuestas": ["\\( \\frac{11}{16} \\)", "\\( \\frac{3}{8} \\)", "\\( \\frac{13}{16} \\)", "\\( \\frac{5}{16} \\)"],
@@ -173,17 +155,7 @@
 			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
 			"categoría": "P"
 		},
-		{
-			"enunciado_p": "Una prueba consta de tres preguntas de falso y verdadero, se sabe que sólo una de las respuestas es falso, ¿Cuál es la probabilidad de aprobar?",
-			"respuesta_correcta": 2,
-			"posibles_respuestas": ["\\( \\frac{1}{4} \\)",
-				"\\( \\frac{3}{8} \\)",
-				"\\( \\frac{5}{8} \\)",
-				"\\( \\frac{3}{4} \\)"
-			],
-			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
-			"categoría": "P"
-		},
+
 		{
 			"enunciado_p": "¿Cuántos números de cinco cifras están compuestos sólo por los dígitos \\(4\\) y \\(6\\)?",
 			"respuesta_correcta": 4,
@@ -259,17 +231,7 @@
 			"grafica": "../statics/images/pregunta20.svg"
 
 		},
-		{
-			"enunciado_p": "El resultado de la operación \\( (\\frac{5}{2})!-0.\\bar{9}\\sqrt{\\pi} \\) es: Tenga en cuenta que \\( (\\frac{1}{2}) != \\frac{\\sqrt{\\pi}}{2} \\)",
-			"respuesta_correcta": 4,
-			"posibles_respuestas": ["0",
-				"\\( \\frac{5}{2} - \\sqrt{\\pi} \\)",
-				"\\( \\frac{25-9\\sqrt{\\pi}}{10}  \\)",
-				"\\( \\frac{-1}{16} \\sqrt{\\pi} \\)"
-			],
-			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
-			"categoría": "C"
-		},
+
 		{
 			"enunciado_p": "De las opciones que se presentan a continuación, gráfica de la función \\( f(x)=1-2\\sqrt{3- \\frac{x}{4}} \\) es:",
 			"respuesta_correcta": 2,
@@ -344,15 +306,7 @@
 			"grafica": "../statics/images/pregunta35.svg"
 
 		},
-		{
-			"enunciado_p": "Una vaca está atada a una de las esquinas de un corral rectangular de \\(10\\)m de largo y \\(5\\)m de ancho por un lazo que mide \\(8\\)m de largo; la situación se ilustra en la figura. ¿Cuál es el área máxima en la que puede pastar la vaca?:",
-			"respuesta_correcta": 4,
-			"posibles_respuestas": ["\\((64\\pi) m^2 \\)  ", "\\(\\frac{109\\pi}{4} m^2 \\)  ", "\\((57\\pi) m^2 \\)  ", " \\(\\frac{201\\pi}{4} m^2 \\)  "],
-			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
-			"categoría": "G",
-			"grafica": "../statics/images/pregunta36.svg"
 
-		},
 		{
 			"enunciado_p": "Las siguientes figuras se construyeron a partir de triángulos equiláteros, de las regiones azul y verde se puede decir que:",
 			"respuesta_correcta": 2,
@@ -443,18 +397,6 @@
 			"grafica": "../statics/images/pregunta69.svg"
 		},
 		{
-			"enunciado_p": "Los cuadrados ABCD y EFGH tiene lados de igual longitud, la medida del ángulo ADE es:",
-			"respuesta_correcta": 4,
-			"posibles_respuestas": ["135°",
-				"145°",
-				"150°",
-				"160°"
-			],
-			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
-			"categoría": "T",
-			"grafica": "../statics/images/pregunta70.svg"
-		},
-		{
 			"enunciado_p": "Si el \\( \\cos \\theta = -\\frac{2}{3} \\) y \\( \\sin \\theta < 0 \\), entonces \\( \\csc \\theta = \\)",
 			"respuesta_correcta": 4,
 			"posibles_respuestas": ["\\( \\frac{-3}{2} \\)",
@@ -531,17 +473,6 @@
 				"19",
 				"20",
 				"21"
-			],
-			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
-			"categoría": "L"
-		},
-		{
-			"enunciado_p": "Durante la fotosíntesis las plantas absorben dióxido de carbono ( \\( CO_2 \\) ) y con ayuda de luz solar producen glucosa ( \\(C_6 H_12 O_6 \\) ) y oxígeno ( \\(O_2 \\) ), cómo lo indica la siguiente ecuación no balanceada: \\( CO_2 + H_2O \\longrightarrow C_6 H_12 O_6 + O_2 \\). Si la molécula de glucosa pesa alrededor de seis veces más que la de oxígeno, ¿Cerca de cuántos Kg de oxígeno produce un árbol por cada Kg de glucosa?",
-			"respuesta_correcta": 1,
-			"posibles_respuestas": ["1 Kg de oxígeno por cada Kg de glucosa",
-				"6 Kg de oxígeno por cada Kg de glucosa",
-				"\\( \\frac{1}{6}\\) Kg de oxígeno por cada Kg de glucosa",
-				"\\( \\frac{1}{2}\\) Kg de oxígeno por cada Kg de glucosa"
 			],
 			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
 			"categoría": "L"
@@ -650,13 +581,7 @@
 			"grafica": "../statics/images/pregunta14.svg"
 
 		},
-		{
-			"enunciado_p": "Para definir las actividades del día institucional se realizó una encuesta a 200 personas, 20 votaron por hacer solamente una jornada deportiva y un concurso de baile, 35 votaron porque solo se realizara el concurso de baile y una exposición de arte, 54 de los estudiantes está de acuerdo con la jornada deportiva, de los cuales 14 también aprueban la exposición; pero de los 200, 45solo quieren la exposición; además se sabe que 22 personas no se decidieron por ninguna opción. ¿Cuántas personas estuvieron de acuerdo con dos de las opciones?",
-			"respuesta_correcta": 4,
-			"posibles_respuestas": ["65", "68", "71", "69"],
-			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
-			"categoría": "AG"
-		},
+
 		{
 			"enunciado_p": "La tabla muestra los resultados de una encuesta aplicada a 200 personas respecto a lo que consideran el problema más importante del país. De las afirmaciones, la única falsa es:",
 			"respuesta_correcta": 2,
@@ -734,17 +659,6 @@
 			"categoría": "GA"
 		},
 		{
-			"enunciado_p": "Dos radiofaros están fijos y separados \\(8\\) Km, un barco se mueve de manera que la diferencia entre las distancias del mismo a cada radiofaro es constante. En un instante se supo que, respecto al punto medio entre ambos radiofaros, la posición del barco era \\( (5 Km, 3 \\sqrt{7} Km) \\); si ahora se sabe que bajo la misma trayectoria ha viajado \\(1\\) Km en la dirección paralela al segmento que une los radiofaros, ¿Cuál es la coordenada \\(y\\) de su actual posición?",
-			"respuesta_correcta": 4,
-			"posibles_respuestas": ["\\( \\sqrt{3} \\)",
-				"\\(2\\)",
-				"\\(2 \\sqrt{6} \\)",
-				"\\(6\\)"
-			],
-			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
-			"categoría": "GA"
-		},
-		{
 			"enunciado_p": "De las afirmaciones, la única falsa es:",
 			"respuesta_correcta": 2,
 			"posibles_respuestas": ["Si dos rectas son paralelas, la diferencia de sus pendientes es igual a cero.",
@@ -766,5 +680,97 @@
 			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
 			"categoría": "GA"
 		}
-	]
+	],
+  	"examen": [
+      {
+  			"enunciado_p": "Cuál es el valor de la expresión \\(2*(5*4) \\), si para dos números reales \\(a,b \\) se cumple que \\(a*b= \\frac{ab}{a-b} \\).",
+  			"respuesta_correcta": 3,
+  			"posibles_respuestas": ["\\( \\frac{1}{7} \\)", "\\(40\\)", "\\(\\frac{-20}{9} \\)", "\\(\\frac{20}{9} \\)"],
+  			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
+  			"categoría": "A"
+  		},
+      {
+  			"enunciado_p": "Si se quiere duplicar un capital en dos años y medio, ¿A qué tasa trimestral simple se debe invertir?",
+  			"respuesta_correcta": 4,
+  			"posibles_respuestas": ["3%",
+  				"5%",
+  				"6%",
+  				"10%"
+  			],
+  			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
+  			"categoría": "E"
+  		},
+      {
+  			"enunciado_p": "Una prueba consta de tres preguntas de falso y verdadero, se sabe que sólo una de las respuestas es falso, ¿Cuál es la probabilidad de aprobar?",
+  			"respuesta_correcta": 2,
+  			"posibles_respuestas": ["\\( \\frac{1}{4} \\)",
+  				"\\( \\frac{3}{8} \\)",
+  				"\\( \\frac{5}{8} \\)",
+  				"\\( \\frac{3}{4} \\)"
+  			],
+  			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
+  			"categoría": "P"
+  		},
+      {
+  			"enunciado_p": "El resultado de la operación \\( (\\frac{5}{2})!-0.\\bar{9}\\sqrt{\\pi} \\) es: Tenga en cuenta que \\( (\\frac{1}{2}) != \\frac{\\sqrt{\\pi}}{2} \\)",
+  			"respuesta_correcta": 4,
+  			"posibles_respuestas": ["0",
+  				"\\( \\frac{5}{2} - \\sqrt{\\pi} \\)",
+  				"\\( \\frac{25-9\\sqrt{\\pi}}{10}  \\)",
+  				"\\( \\frac{-1}{16} \\sqrt{\\pi} \\)"
+  			],
+  			"video": "https://www.youtube.com/embed/pZ71EJ7XigU",
+  			"categoría": "C"
+  		},
+      {
+        "enunciado_p": "Una vaca está atada a una de las esquinas de un corral rectangular de \\(10\\)m de largo y \\(5\\)m de ancho por un lazo que mide \\(8\\)m de largo; la situación se ilustra en la figura. ¿Cuál es el área máxima en la que puede pastar la vaca?:",
+        "respuesta_correcta": 4,
+        "posibles_respuestas": ["\\((64\\pi) m^2 \\)  ", "\\(\\frac{109\\pi}{4} m^2 \\)  ", "\\((57\\pi) m^2 \\)  ", " \\(\\frac{201\\pi}{4} m^2 \\)  "],
+        "video": "https://www.youtube.com/embed/pZ71EJ7XigU",
+        "categoría": "G",
+        "grafica": "../statics/images/pregunta36.svg"
+
+      },
+      {
+        "enunciado_p": "Los cuadrados ABCD y EFGH tiene lados de igual longitud, la medida del ángulo ADE es:",
+        "respuesta_correcta": 4,
+        "posibles_respuestas": ["135°",
+          "145°",
+          "150°",
+          "160°"
+        ],
+        "video": "https://www.youtube.com/embed/pZ71EJ7XigU",
+        "categoría": "T",
+        "grafica": "../statics/images/pregunta70.svg"
+      },
+      {
+        "enunciado_p": "Durante la fotosíntesis las plantas absorben dióxido de carbono ( \\( CO_2 \\) ) y con ayuda de luz solar producen glucosa ( \\(C_6 H_12 O_6 \\) ) y oxígeno ( \\(O_2 \\) ), cómo lo indica la siguiente ecuación no balanceada: \\( CO_2 + H_2O \\longrightarrow C_6 H_12 O_6 + O_2 \\). Si la molécula de glucosa pesa alrededor de seis veces más que la de oxígeno, ¿Cerca de cuántos Kg de oxígeno produce un árbol por cada Kg de glucosa?",
+        "respuesta_correcta": 1,
+        "posibles_respuestas": ["1 Kg de oxígeno por cada Kg de glucosa",
+          "6 Kg de oxígeno por cada Kg de glucosa",
+          "\\( \\frac{1}{6}\\) Kg de oxígeno por cada Kg de glucosa",
+          "\\( \\frac{1}{2}\\) Kg de oxígeno por cada Kg de glucosa"
+        ],
+        "video": "https://www.youtube.com/embed/pZ71EJ7XigU",
+        "categoría": "L"
+      },
+      {
+        "enunciado_p": "Para definir las actividades del día institucional se realizó una encuesta a 200 personas, 20 votaron por hacer solamente una jornada deportiva y un concurso de baile, 35 votaron porque solo se realizara el concurso de baile y una exposición de arte, 54 de los estudiantes está de acuerdo con la jornada deportiva, de los cuales 14 también aprueban la exposición; pero de los 200, 45solo quieren la exposición; además se sabe que 22 personas no se decidieron por ninguna opción. ¿Cuántas personas estuvieron de acuerdo con dos de las opciones?",
+        "respuesta_correcta": 4,
+        "posibles_respuestas": ["65", "68", "71", "69"],
+        "video": "https://www.youtube.com/embed/pZ71EJ7XigU",
+        "categoría": "AG"
+      },
+      {
+        "enunciado_p": "Dos radiofaros están fijos y separados \\(8\\) Km, un barco se mueve de manera que la diferencia entre las distancias del mismo a cada radiofaro es constante. En un instante se supo que, respecto al punto medio entre ambos radiofaros, la posición del barco era \\( (5 Km, 3 \\sqrt{7} Km) \\); si ahora se sabe que bajo la misma trayectoria ha viajado \\(1\\) Km en la dirección paralela al segmento que une los radiofaros, ¿Cuál es la coordenada \\(y\\) de su actual posición?",
+        "respuesta_correcta": 4,
+        "posibles_respuestas": ["\\( \\sqrt{3} \\)",
+          "\\(2\\)",
+          "\\(2 \\sqrt{6} \\)",
+          "\\(6\\)"
+        ],
+        "video": "https://www.youtube.com/embed/pZ71EJ7XigU",
+        "categoría": "GA"
+      }
+    ]
 }

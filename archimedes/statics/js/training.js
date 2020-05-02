@@ -86,7 +86,6 @@ window.addEventListener('load', function () {
 try{
   var imagen =  preguntas["grafica"];
   if(imagen != undefined){
-    //console.log(imagen);
     imagenpregunta.innerHTML = "<img  src='" + imagen +  "' width='350' height='200'>"
   }
 }catch(error){
@@ -172,14 +171,17 @@ $("#verificar").click(function(event){
     //var container_green = document.getElementById("answer"+ preguntas['respuesta_correcta'].toString() + "_container")
     //container_green.style.backgroundColor = '#00b700';
     var respuesta_correcta = document.getElementById("respuesta_" + preguntas['respuesta_correcta'].toString() + "_label");
-
-    respuesta_correcta.innerHTML = respuesta_correcta.innerHTML +  " &#9989;";
+    if(section != "examen"){
+      respuesta_correcta.innerHTML = respuesta_correcta.innerHTML +  " &#9989;";
+    }
     if($("#respuesta_" + preguntas['respuesta_correcta'].toString()).is(":checked")){
         num_correctas = num_correctas + 1;
     }else{
       //console.log("wrong");
-      var button_checked = document.getElementById($('input[name=answer]:checked', '#questions_form').val());
-      button_checked.getElementsByTagName("label")[0].innerHTML = button_checked.getElementsByTagName("label")[0].innerHTML  + "	&#10060;"
+      if(section != "examen"){
+        var button_checked = document.getElementById($('input[name=answer]:checked', '#questions_form').val());
+        button_checked.getElementsByTagName("label")[0].innerHTML = button_checked.getElementsByTagName("label")[0].innerHTML  + "	&#10060;"
+      }
     }
     for (var i=0, iLen=radios.length; i<iLen; i++) {
       radios[i].disabled = true;

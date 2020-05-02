@@ -17,6 +17,8 @@ def practicar(request):
     return render(request, 'archimedesquestion/practicar.html')
 def proyecto(request):
     return render(request, 'archimedesquestion/proyecto.html')
+def recursos(request):
+    return render(request, 'archimedesquestion/recursos.html')
 @csrf_exempt
 def set_question(request):
     data = open("questions.json","r")
