@@ -166,7 +166,7 @@ $("#verificar").click(function(event){
   if (button_checked === null){
     alert('Por favor seleccione una respuesta')
   }else{
-    video.style.display = "inline-block";
+    video.style.display =  "none";//"inline-block";
 
     //clearcolors()
     //var container_green = document.getElementById("answer"+ preguntas['respuesta_correcta'].toString() + "_container")
