@@ -6,6 +6,7 @@ from archimedesquestion.forms import UserForm #, UserProfileInfoForm
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
+import json
 
 # Create your views here.
 
@@ -16,7 +17,24 @@ def practicar(request):
     return render(request, 'archimedesquestion/practicar.html')
 def proyecto(request):
     return render(request, 'archimedesquestion/proyecto.html')
+@csrf_exempt
+def set_question(request):
+    data = open("questions.json","r")
+    questions = json.loads(data.read())[request.POST["section"]]
+    pos = int(request.POST["position"])
+    print(pos)
+    try:
+        question = questions[pos]
+    except:
+        question = {"enunciado_p":"Gracias"}
+    r = json.dumps(question)
 
+    return HttpResponse(r, content_type="application/json")
+    #return render(request, 'archimedesquestion/iniciar.html')
+     #{'user_form':user_form, 'profile_form':profile_form, 'registered':registered})
+@csrf_exempt
+def iniciar(request):
+    return render(request, 'archimedesquestion/iniciar.html')
 
 def register(request):
     registered = False

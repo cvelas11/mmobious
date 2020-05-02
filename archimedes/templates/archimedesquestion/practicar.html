@@ -7,15 +7,26 @@
 
 {% block jumbo_block %}
 
+<script>
+function algebra(sec) {
+  window.location.href =  "{% url 'archimedesquestion:questions' %}" + "?section=" + sec;
+}
+</script>
 <div class="container">
-  <div id="jumbo_questions" class="jumbotron">
-    <div class="">
+  <div id="jumbo_questions" class="jumbotron" >
+    <div class="" >
 
-      <p>A continuación encontrará una serie de preguntas en temas relacionados con matemáticas y solución de problemas diseñados con el fin de servir como preparación para las pruebas saber, exámenes de admisión a diferentes universidades y olimpiadas de matemáticas. Puedes usar la plataforma sin necesidad de ingresar con usuario y contraseña, sin embargo, en ese caso no podremos guardar los resultados en nuestro sistema por lo que te recomendamos hacerlo.</p>
-      <div class="center">
-        <form action="{% url 'archimedesquestion:questions' %}">
-          <input type="submit" class="btn btn-info btn-iniciar"name="boton" value="Iniciar Entrenamiento" />
-        </form>
+      <p ALIGN="justify"> A continuación encontrará una serie de temas relacionados con matemáticas y solución de problemas diseñados con el fin de servir como preparación para las pruebas saber, exámenes de admisión a diferentes universidades y olimpiadas de matemáticas. Entrena con los diferentes módulos. Cuando te sientas listo, puedes hacer el exámen general para que conozcas tu progreso.</p>
+      <div class="center" style="width:100% ; " >
+        <button  id = 'algebra'   onclick="algebra('algebra')" class="btn-sections  btn-iniciar" style="background-color:	#ff9054" name="boton"> <br>Álgebra <br> </button>
+        <button  id = 'geometria'  onclick="algebra('geometria')" class="btn-sections   geometria-btn  btn-iniciar"     style="background-color:#ffe17f" name="boton"> Geometría y <br>  Trigonometría</button>
+        <button  id = 'logica'     onclick="algebra('logica')"  class="btn-sections   probabilidad-btn  btn-iniciar"  style="background-color:#1BAFBF" name="boton" > <br> Lógica </button>
+        <button  id = 'calculo'    onclick="algebra('calculo')"  class="btn-sections   trigonometria-btn  btn-iniciar" style="background-color:#b7b8f2" name="boton" > <br> Cálculo </button>
+        <button  id = 'estadistica'  onclick="algebra('estadistica')" class="btn-sections   examen-btn  btn-iniciar"        style="background-color:#a1a9b4" name="boton"> Probabilidad y  Estadística </button>
+        <button  id = 'geometriaalgebraica'  onclick="algebra('geometriaalgebraica')" class="btn-sections   examen-btn  btn-iniciar"        style="background-color:#fdf0c4" name="boton"> Geometría Algebraíca</button>
+        <button  id = 'analisisgraficas'  onclick="algebra('analisisgraficas')" class="btn-sections   examen-btn  btn-iniciar"        style="background-color:#f7a992" name="boton"> Análisis de Gráficas </button>
+        <button  id = 'examengeneral'  onclick="algebra('examengeneral')" class="btn-sections   examen-btn  btn-iniciar"        style="background-color:#FF6161;" disabled="true" name="boton"> Exámen General </button>
+
       </div>
 
 
@@ -24,5 +35,6 @@
   <p></p><br>
 
 </div>
+<script type="text/javascript" src = "{% static 'js/questions.js' %}"></script>
 
 {% endblock %}

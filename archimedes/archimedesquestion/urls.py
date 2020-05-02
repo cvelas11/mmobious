@@ -26,6 +26,7 @@ urlpatterns = [
     url("^ingresar", views.ingresar, name = 'ingresar'),
     url("^practicar", views.practicar, name = 'practicar'),
     url("^questions", views.questions, name = 'questions'),
+    url("^iniciar", views.iniciar, name = 'iniciar'),
     url("^proyecto", views.proyecto, name = 'proyecto')
 
 ]
