@@ -28,7 +28,7 @@ var num_correctas = 0;
  var respuesta_2 = document.getElementById("respuesta_2_label");
  var respuesta_3 = document.getElementById("respuesta_3_label");
  var respuesta_4 = document.getElementById("respuesta_4_label");
- var video = document.getElementById("video_solucion");
+ //var video = document.getElementById("video_solucion");
 //
  // enunciado.innerHTML = preguntas['enunciado_p'];
  // respuesta_1.innerHTML = preguntas['posibles_respuestas'][0];
@@ -86,7 +86,7 @@ window.addEventListener('load', function () {
 try{
   var imagen =  preguntas["grafica"];
   if(imagen != undefined){
-    console.log(imagen);
+    //console.log(imagen);
     imagenpregunta.innerHTML = "<img  src='" + imagen +  "' width='350' height='200'>"
   }
 }catch(error){
@@ -98,8 +98,8 @@ function pregunta(preguntas){
     for (var i=0, iLen=radios.length; i<iLen; i++) {
       radios[i].disabled = false;
     }
-    video.style.display = "none";
-    console.log(preguntas['enunciado_p']);
+    //video.style.display = "none";
+    //console.log(preguntas['enunciado_p']);
     if(preguntas['enunciado_p'] != "Gracias" ){
       contador = contador + 1
       enunciado.innerHTML = preguntas['enunciado_p']
@@ -109,13 +109,13 @@ function pregunta(preguntas){
       respuesta_3.innerHTML = preguntas['posibles_respuestas'][2];
       respuesta_4.innerHTML = preguntas['posibles_respuestas'][3];
       MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-      video.src  = preguntas['video'];
-      video.disabled = true;
+      //video.src  = preguntas['video'];
+      //video.disabled = true;
       imagenpregunta.innerHTML = ""
       try{
         imagen =  preguntas["grafica"];
         if(imagen != undefined){
-          console.log(imagen);
+          //console.log(imagen);
           imagenpregunta.innerHTML = "<img  src='" + imagen +  "' width='350' height='200'>"
         }
       }catch(error){
@@ -166,7 +166,7 @@ $("#verificar").click(function(event){
   if (button_checked === null){
     alert('Por favor seleccione una respuesta')
   }else{
-    video.style.display =  "none";//"inline-block";
+    //video.style.display =  "none";//"inline-block";
 
     //clearcolors()
     //var container_green = document.getElementById("answer"+ preguntas['respuesta_correcta'].toString() + "_container")
@@ -177,7 +177,7 @@ $("#verificar").click(function(event){
     if($("#respuesta_" + preguntas['respuesta_correcta'].toString()).is(":checked")){
         num_correctas = num_correctas + 1;
     }else{
-      console.log("wrong");
+      //console.log("wrong");
       var button_checked = document.getElementById($('input[name=answer]:checked', '#questions_form').val());
       button_checked.getElementsByTagName("label")[0].innerHTML = button_checked.getElementsByTagName("label")[0].innerHTML  + "	&#10060;"
     }
