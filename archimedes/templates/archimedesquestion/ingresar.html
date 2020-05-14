@@ -1,13 +1,32 @@
 {% extends 'archimedesquestion/base.html' %}
+{% load socialaccount %}
 
 {% load static %}
 
 {% block jumbo_block %}
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+function glogin() {
+  window.location.href =  "{% provider_login_url 'google' %}";
+  console.log("here");
+}
+</script>
+
+
+<meta name="google-signin-client_id" content="80025423548-d7v0nb72u5appnl14i749gptpjnkmhad.apps.googleusercontent.com">
+
+
 
 <div class="row">
   <div class="col-xs-4 col-md-2 col-sm-2">
   </div>
   <div class="jumbotron col-xs-4 col-md-8 col-sm-2">
+    {% if user.is_authenticated %}
+
+     <p> Already Loged In </p>
+     <p>{{ user.username }} !</p><!-- </p> -->
+
+    {% else %}
     {% if next %}
     <form action="/user_login/?next={{next}}" method="post" >
     {% else %}
@@ -21,11 +40,25 @@
         <label for="password">Password</label>
         <input id="password" type="password" name="password" class="form-control">
       </div>
-      <input type="submit" class="btn btn-info" name="" value="Ingresar">
+      <input type="submit" class="btn btn-info" name="" value="Ingresar"><br>
+      <p></p>
+      <div class="g-signin2" onclick="glogin()" ></div>
+      {% endif %}
     </form>
 </div>
+
+
+
+
+
 <div class="col-xs-4 col-md-2 col-sm-2">
+
 </div>
+
+
+
+
+
 
 </div>
 <script type="text/javascript" src = "{% static 'js/questions.js' %}"></script>

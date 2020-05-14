@@ -83,3 +83,8 @@ def ingresar(request):
 
     else:
         return render(request, 'archimedesquestion/ingresar.html')
+
+
+def logout_func(request):
+    logout(request)
+    return render(request, 'archimedesquestion/ingresar.html')
