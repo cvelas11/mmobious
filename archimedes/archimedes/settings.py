@@ -25,7 +25,7 @@ SECRET_KEY = '1+a7kfkaxnn71r0um66nb2am-w0a-^30_l2(3p_mu#tg8q4glg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cvelas11.pythonanywhere.com','127.0.0.1','fb207447.ngrok.io']
+ALLOWED_HOSTS = ['cvelas11.pythonanywhere.com','127.0.0.1','fb207447.ngrok.io','localhost']
 
 
 # Application definition
@@ -33,11 +33,16 @@ ALLOWED_HOSTS = ['cvelas11.pythonanywhere.com','127.0.0.1','fb207447.ngrok.io']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'archimedesquestion'
+    'archimedesquestion',
+ 'allauth',
+ 'allauth.account',   # <--
+ 'allauth.socialaccount',   # <--
+ 'allauth.socialaccount.providers.google',   # <--
 ]
 
 MIDDLEWARE = [
@@ -123,3 +128,27 @@ STATIC_URL = '/statics/'
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
+
+
+AUTHENTICATION_BACKEND = (
+'django.contrib.auth.backends.ModelBackend',
+'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+
+SITE_ID =  1
+
+
+LOGIN_REDIRECT_URL = '/ingresar'
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        }
+    }
+}

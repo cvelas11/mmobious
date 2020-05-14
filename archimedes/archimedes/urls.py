@@ -19,12 +19,15 @@ from django.conf.urls import url
 from django.conf.urls import include
 from archimedesquestion import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.views.generic import TemplateView
 urlpatterns = [
     url('admin/', admin.site.urls),
     url("^iniciar/", views.iniciar, name = 'iniciar'),
     url("^set_question/", views.set_question, name = 'set_question'),
     url("^arquimedesquestion/", include('archimedesquestion.urls'), name = 'questions'),
     url("^$", views.practicar, name = 'practicar'),
+    path('ingresar', TemplateView.as_view(template_name='archimedesquestion/practicar.html')), # <--
+    path('accounts/', include('allauth.urls'))
 ]
 
 urlpatterns += staticfiles_urlpatterns()

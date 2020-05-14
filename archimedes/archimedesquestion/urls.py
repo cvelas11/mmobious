@@ -18,16 +18,20 @@ from django.urls import path
 from django.conf.urls import url
 from django.conf.urls import include
 from archimedesquestion import views
+from django.views.generic import TemplateView
 
 app_name= 'archimedesquestion'
 
 urlpatterns = [
     url("^register", views.register, name = 'register'),
     url("^ingresar", views.ingresar, name = 'ingresar'),
+    url("^logout", views.logout_func, name = 'logout'),
     url("^practicar", views.practicar, name = 'practicar'),
     url("^recursos", views.recursos, name = 'recursos'),
     url("^questions", views.questions, name = 'questions'),
     url("^iniciar", views.iniciar, name = 'iniciar'),
-    url("^proyecto", views.proyecto, name = 'proyecto')
+    url("^proyecto", views.proyecto, name = 'proyecto'),
+    path('practicar', TemplateView.as_view(template_name='archimedesquestion/practicar.html')), # <--
+    path('accounts/', include('allauth.urls'))
 
 ]
