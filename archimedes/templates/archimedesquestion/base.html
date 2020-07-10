@@ -21,7 +21,7 @@
   <body>
 
     <nav class="navbar navbar-expand-lg py-md-3 navbar navbar-expand-sm navbar-custom">
-        <a href="{% url 'archimedesquestion:proyecto' %}" class="navbar-brand">Corporación</a>
+        <a href="{% url 'archimedesquestion:proyecto' %}" class="navbar-brand">Project</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom">
             <i class="fa fa-bars fa-lg py-1 text-white"></i>
@@ -29,7 +29,7 @@
         <div class="navbar-collapse collapse" id="navbarCustom">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="navbar-brand" href="{% url 'archimedesquestion:practicar' %}">Practicar</a>
+                    <a class="navbar-brand" href="{% url 'archimedesquestion:practicar' %}">Practice </a>
                 </li>
                 <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -44,25 +44,28 @@
             </ul>
             <div class="">
               <b class="logo"> MM&Oumlbious</b><br/>
-              <b>Potenciar, Multiplicar, Sumar.</b>
+              <!-- <b>Potenciar, Multiplicar, Sumar.</b> -->
             </div>
             <ul class="navbar-nav ml-auto">
               {% if user.is_authenticated %}
               <li class="nav-item active">
-                <a class="navbar-brand" > {{ user.username }} </a>  
+                <a class="navbar-brand" > {{ user.username }} </a>
               </li>
               <li class="nav-item active">
                   <a class="navbar-brand" href="{% url 'archimedesquestion:logout' %}">Salir</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="navbar-brand" href="{% url 'archimedesquestion:dashboard' %}">Dashboard</a>
               </li>
 
 
               {% else %}
               <li class="nav-item active">
-                  <a class="navbar-brand" href="{% url 'archimedesquestion:ingresar' %}">Ingresar</a>
+                  <a class="navbar-brand" href="{% url 'archimedesquestion:ingresar' %}">Sign In </a>
               </li>
               <li class="nav-item active">
 
-                  <a class="navbar-brand" href="{% url 'archimedesquestion:register' %}">Registrarse</a>
+                  <a class="navbar-brand" href="{% url 'archimedesquestion:register' %}">Sign Up </a>
               </li>
               {% endif %}
 

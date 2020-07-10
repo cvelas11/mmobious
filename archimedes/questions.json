@@ -294,7 +294,7 @@
 
 		},
 		{
-			"enunciado_p": "Para realizar una ventana decorativa se eligió la siguiente forma. La cantidad de cristal necesaria para cubrir la ventana es:",
+			"enunciado_p": "What is the quantity of cristal necessary to make the following window ?" ,
 			"respuesta_correcta": 1,
 			"posibles_respuestas": ["\\(1000\\pi +4800\\)cm",
 				"\\(2000\\pi +3600\\)cm",

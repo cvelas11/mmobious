@@ -19,6 +19,8 @@ def proyecto(request):
     return render(request, 'archimedesquestion/proyecto.html')
 def recursos(request):
     return render(request, 'archimedesquestion/recursos.html')
+def dashboard(request):
+    return render(request, 'archimedesquestion/dashboard.html')
 @csrf_exempt
 def set_question(request):
     data = open("questions.json","r")

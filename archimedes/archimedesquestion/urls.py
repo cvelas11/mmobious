@@ -31,7 +31,9 @@ urlpatterns = [
     url("^questions", views.questions, name = 'questions'),
     url("^iniciar", views.iniciar, name = 'iniciar'),
     url("^proyecto", views.proyecto, name = 'proyecto'),
-    path('practicar', TemplateView.as_view(template_name='archimedesquestion/practicar.html')), # <--
-    path('accounts/', include('allauth.urls'))
+    url("^dashboard", views.dashboard, name = 'dashboard'),
+
+    # path('practicar', TemplateView.as_view(template_name='archimedesquestion/practicar.html')), # <--
+    #path('accounts/', include('allauth.urls'))
 
 ]
